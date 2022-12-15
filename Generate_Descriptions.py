@@ -1,5 +1,4 @@
 import settings
-import os
 import openai
 import json
 
