@@ -9,11 +9,18 @@ def get_response(model, temperature, max_tokens, text):
     return openai.Completion.create(model=model, prompt=text, max_tokens=max_tokens, temperature=temperature)
 
 def write_output(data, model):
+    """Write output to file
+
+    Args:
+        data (String): Product description 
+        model (String): Model used to generate the product description
+    """
 
     with open("./data/{}_output.txt".format(model), "a") as f:
         f.write(data)
 
 def main():
+
 
     #complex model creates a long description of about 3 sentences, small creates only one.
     openai.api_key = settings.Open_AI_Key
