@@ -29,7 +29,8 @@ def main():
     temperature = 0.7
     max_tokens = 512
 
-    #smaple input
+    #sample input
+    #product_text should be changed
     int_prompt = "Write a long product description for this item just use information from the points:"
     product_text = "This product comes with a free one year manufacturer guarantee. A free second year guarantee is available upon registering product. Dimensions (cm) - H142.0 x W55.0 x D55.0. 55 cm wide, 142 cm tall larder fridge with 230 litre net capacity. No freezer, 40dB noise level, 4 fixed door racks, 4 adjustable glass shelves, 1 storage compartment. RH55LF142SS"
 
