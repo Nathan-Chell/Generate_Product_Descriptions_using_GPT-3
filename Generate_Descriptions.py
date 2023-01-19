@@ -1,6 +1,6 @@
 import settings
 import openai
-import json
+
 
 
 
@@ -32,8 +32,6 @@ def main():
 
     response = get_response(complex_model, temperature, max_tokens, int_prompt+product_text)
     write_output(dict(response)['choices'][0]['text'], dict(response)['model'])
-
-
 
 if __name__ == '__main__':
     main()
